@@ -1,0 +1,8 @@
+<h1>Kanban project</h1>
+<div *ngIf="showProjects; else dashboard">
+  <app-projects (hideProjects)="showDashboard()"></app-projects>
+</div>
+<ng-template #dashboard>
+  <app-dashboard></app-dashboard>
+</ng-template>
+
